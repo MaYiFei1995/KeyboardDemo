@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="#f3f4f5">
+
+    <RelativeLayout
+            android:id="@+id/sfzh"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="#FFFFFF">
+
+        <TextView
+                android:id="@+id/sfzhLabel"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="身份证："
+                android:textColor="#585c64"
+                android:textSize="16sp"/>
+
+        <EditText
+                android:id="@+id/sfzhEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="60dp"
+                android:layout_toRightOf="@id/sfzhLabel"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:background="@null"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#222222"
+                android:textColorHint="#cccccc"
+                android:textSize="16dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/hphm"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:layout_constraintTop_toBottomOf="@id/sfzh"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF">
+
+        <TextView
+                android:id="@+id/hphmLabel"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="车牌号："
+                android:textColor="#585c64"
+                android:textSize="16sp"/>
+
+        <EditText
+                android:id="@+id/hphmEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="60dp"
+                android:layout_toRightOf="@id/hphmLabel"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:background="@null"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#222222"
+                android:textColorHint="#cccccc"
+                android:textSize="16dp"/>
+
+    </RelativeLayout>
+
+
+    <com.mai.keyboard.CustomKeyboardView
+            android:id="@+id/customKeyboardSfzh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_gravity="bottom"
+            android:background="#e6e6e6"
+            android:focusable="true"
+            android:visibility="gone"
+            android:focusableInTouchMode="true"
+            android:keyBackground="@color/colorPrimary"
+            android:keyTextColor="#ffffff"
+            android:keyTextSize="24dp"
+            android:labelTextSize="23.04sp"
+            android:shadowRadius="0"/>
+
+    <com.mai.keyboard.CustomKeyboardView
+            android:id="@+id/customKeyboardHphm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_gravity="bottom"
+            android:background="#e6e6e6"
+            android:focusable="true"
+            android:visibility="gone"
+            android:focusableInTouchMode="true"
+            android:keyBackground="@color/colorPrimary"
+            android:keyTextColor="#ffffff"
+            android:keyTextSize="24dp"
+            android:labelTextSize="23.04sp"
+            android:shadowRadius="0"/>
+
+</android.support.constraint.ConstraintLayout>
